@@ -7,5 +7,6 @@ namespace CrazyElephant_Client.ViewModels
 {
     class MainWindowViewModel
     {
+
     }
 }

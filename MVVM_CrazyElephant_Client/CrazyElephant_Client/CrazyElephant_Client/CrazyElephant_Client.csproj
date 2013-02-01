@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>C:\Program Files (x86)\Prism\Bin\Desktop\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -58,6 +61,7 @@
     <Compile Include="Services\IOrderService.cs" />
     <Compile Include="Services\MockOrderService.cs" />
     <Compile Include="Services\XmlDataService.cs" />
+    <Compile Include="ViewModels\DishMenuItemViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
