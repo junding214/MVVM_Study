@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
+using SimpleMVVM.ViewModels;
 
 namespace SimpleMVVM
 {
@@ -23,6 +25,9 @@ namespace SimpleMVVM
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainWindowViewModel();
         }
+
+ 
     }
 }

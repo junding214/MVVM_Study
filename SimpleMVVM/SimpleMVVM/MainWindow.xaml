@@ -3,6 +3,25 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Content="Save" Command="{Binding SaveCommand}"></Button>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--<TextBox x:Name="tb1" Grid.Row="0" Background="LightBlue" Margin="4" Text="{Binding Input1}"></TextBox>
+            <TextBox x:Name="tb2" Grid.Row="1" Background="LightBlue" Margin="4" Text="{Binding Input2}"></TextBox>
+            <TextBox x:Name="tb3" Grid.Row="2" Background="LightBlue" Margin="4" Text="{Binding Result}"></TextBox>-->
+            <Slider x:Name="tb1" Grid.Row="0" Background="LightBlue" Margin="4" Value="{Binding Input1}"></Slider>
+            <Slider x:Name="tb2" Grid.Row="1" Background="LightBlue" Margin="4" Value="{Binding Input2}"></Slider>
+            <Slider x:Name="tb3" Grid.Row="2" Background="LightBlue" Margin="4" Value="{Binding Result}"></Slider>
+            <Button x:Name="addButton" Grid.Row="3" Content="Add" Width="120" Height="80" Command="{Binding AddCommand}"></Button>
+        </Grid>
     </Grid>
 </Window>

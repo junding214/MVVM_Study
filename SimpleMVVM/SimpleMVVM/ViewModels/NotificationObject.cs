@@ -12,11 +12,11 @@ namespace SimpleMVVM.ViewModels
         
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public void RaisePropertyChange(string propertyName)
+        public void RaisePropertyChanged(string propertyName)
         {
             if (PropertyChanged != null)
             {
-                PropertyChanged.Invoke(this,new PropertyChangedEventArgs(propertyName);
+                PropertyChanged.Invoke(this,new PropertyChangedEventArgs(propertyName));
             }
         }
     }
